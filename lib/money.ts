@@ -51,8 +51,8 @@ var assertOperand = function (operand) {
  * @constructor
  */
 export class Money {
-    amount: number
-    currency: any
+    readonly amount: number
+    readonly currency: any
     
     constructor(amount, currency){
       if (isString(currency))
@@ -66,7 +66,6 @@ export class Money {
 
       this.amount = amount;
       this.currency = currency.code;
-      Object.freeze(this);
     }
 
     static fromInteger = function (amount, currency) {

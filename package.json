@@ -7,8 +7,14 @@
         "name": "David Kalosi",
         "email": "david.kalosi@gmail.com"
     },
-    "keywords": ["money", "javascript", "currency"],
-    "files": ["lib"],
+    "keywords": [
+        "money",
+        "javascript",
+        "currency"
+    ],
+    "files": [
+        "lib"
+    ],
     "licenses": {
         "type": "MIT"
     },
@@ -20,11 +26,13 @@
         "url": "https://github.com/davidkalosi/js-money/issues"
     },
     "dependencies": {
+        "@types/lodash": "^4.14.51",
         "lodash": "4.x.x"
     },
     "devDependencies": {
+        "chai": "1.x.x",
         "mocha": "1.x.x",
-        "chai": "1.x.x"
+        "typescript": "^2.1.5"
     },
     "scripts": {
         "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
